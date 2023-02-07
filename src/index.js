@@ -16,3 +16,21 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+import React from 'react';
+import styles from './LoginForm.module.scss';
+
+const LoginForm = () => {
+  return (
+    <form className={styles.form}>
+      <label htmlFor="username">Username:</label>
+      <input type="text" id="username" />
+
+      <label htmlFor="password">Password:</label>
+      <input type="password" id="password" />
+
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default LoginForm;
