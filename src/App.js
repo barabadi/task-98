@@ -17,5 +17,23 @@ function App() {
     </div>
   );
 }
+import React from 'react';
+import styles from './LoginForm.module.scss';
+
+const LoginForm = () => {
+  return (
+    <form className={styles.form}>
+      <label htmlFor="username">Username:</label>
+      <input type="text" id="username" />
+
+      <label htmlFor="password">Password:</label>
+      <input type="password" id="password" />
+
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default LoginForm;
 
 export default App;
